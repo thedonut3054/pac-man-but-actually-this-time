@@ -29,6 +29,16 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage2"
     },
+    "image7": {
+        "data": "hwQBAAEAAAACAAAA",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage5"
+    },
+    "image8": {
+        "data": "hwQDAAMAAAACAgAAIAAAAAICAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage6"
+    },
     "anim3": {
         "namespace": "myAnimations",
         "id": "anim3",

@@ -1,6 +1,7 @@
 namespace SpriteKind {
     export const Coin = SpriteKind.create()
     export const Check = SpriteKind.create()
+    export const fcheck = SpriteKind.create()
 }
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     if (mySprite.tileKindAt(TileDirection.Top, assets.tile`myTile7`) && mySprite.vy != -80) {
@@ -57,6 +58,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
         )
     }
 })
+let frontcheck: Sprite = null
 let mySprite: Sprite = null
 info.setLife(3)
 namespace userconfig {
@@ -67,3 +69,26 @@ tiles.setCurrentTilemap(tilemap`level`)
 tileUtil.createSpritesOnTiles(assets.tile`myTile7`, assets.image`myImage`, SpriteKind.Coin)
 mySprite = sprites.create(assets.image`myImage0`, SpriteKind.Player)
 mySprite.setPosition(11 * 16 + 8, 20 * 16 + 8)
+game.onUpdateInterval(500, function () {
+    if (mySprite.vx != 0) {
+        if (mySprite.vx < 0) {
+            frontcheck = sprites.create(assets.image`myImage5`, SpriteKind.fcheck)
+            frontcheck.setPosition(mySprite.x, mySprite.y)
+            frontcheck.setVelocity(-100, 0)
+        } else if (mySprite.vx > 0) {
+            frontcheck = sprites.create(assets.image`myImage5`, SpriteKind.fcheck)
+            frontcheck.setPosition(mySprite.x, mySprite.y)
+            frontcheck.setVelocity(100, 0)
+        }
+    } else if (mySprite.vy != 0) {
+        if (mySprite.vy < 0) {
+            frontcheck = sprites.create(assets.image`myImage5`, SpriteKind.fcheck)
+            frontcheck.setPosition(mySprite.x, mySprite.y)
+            frontcheck.setVelocity(0, -100)
+        } else if (mySprite.vy > 0) {
+            frontcheck = sprites.create(assets.image`myImage5`, SpriteKind.fcheck)
+            frontcheck.setPosition(mySprite.x, mySprite.y)
+            frontcheck.setVelocity(0, 100)
+        }
+    }
+})

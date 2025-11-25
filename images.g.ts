@@ -111,6 +111,16 @@ f 5 5 5 5 5 5 5 5 5 5 5 f
 . . . . . . . . . . . . . . 2 2 
 . . . . . . . . . . . . . . 2 2 
 `;
+            case "image7":
+            case "myImage5":return img`
+2 
+`;
+            case "image8":
+            case "myImage6":return img`
+2 . 2 
+. 2 . 
+2 . 2 
+`;
         }
         return null;
     })
