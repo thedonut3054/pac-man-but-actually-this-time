@@ -29,7 +29,6 @@ function ResetGhosts () {
         Ghost4.setPosition(11 * 16 + 8, 13 * 16 + 8)
         Ghost4.follow(mySprite, 70)
     })
-    list = sprites.allOfKind(SpriteKind.Enemy)
 }
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     if (mySprite.tileKindAt(TileDirection.Top, assets.tile`myTile7`) && mySprite.vy != -80) {
@@ -43,7 +42,6 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
         )
         Shoot_Forward()
         Shoot_Backward()
-        Turn_Waypoint2()
     }
 })
 function Shoot_Backward () {
@@ -93,7 +91,6 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         )
         Shoot_Forward()
         Shoot_Backward()
-        Turn_Waypoint2()
     }
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -108,7 +105,6 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         )
         Shoot_Forward()
         Shoot_Backward()
-        Turn_Waypoint2()
     }
 })
 scene.onHitWall(SpriteKind.bcheck, function (sprite, location) {
@@ -117,7 +113,7 @@ scene.onHitWall(SpriteKind.bcheck, function (sprite, location) {
     BackWaypoint.setFlag(SpriteFlag.Invisible, false)
     BackWaypoint.setPosition(Math.round((sprite.x - 8) / 16) * 16 + 8, Math.round((sprite.y - 8) / 16) * 16 + 8)
     sprites.destroy(sprite)
-    list[1].follow(BackWaypoint, 70)
+    Ghost.follow(BackWaypoint, 70)
 })
 scene.onHitWall(SpriteKind.fcheck, function (sprite, location) {
     sprites.destroyAllSpritesOfKind(SpriteKind.FrontPoint)
@@ -125,7 +121,7 @@ scene.onHitWall(SpriteKind.fcheck, function (sprite, location) {
     FrontWaypoint.setFlag(SpriteFlag.Invisible, false)
     FrontWaypoint.setPosition(Math.round((sprite.x - 8) / 16) * 16 + 8, Math.round((sprite.y - 8) / 16) * 16 + 8)
     sprites.destroy(sprite)
-    list[0].follow(FrontWaypoint, 70)
+    Ghost2.follow(FrontWaypoint, 70)
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     if (mySprite.tileKindAt(TileDirection.Bottom, assets.tile`myTile7`) && mySprite.vy != 80) {
@@ -139,15 +135,8 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
         )
         Shoot_Forward()
         Shoot_Backward()
-        Turn_Waypoint2()
     }
 })
-function Turn_Waypoint2 () {
-    sprites.destroyAllSpritesOfKind(SpriteKind.tpoint)
-    Turn_Waypoint = sprites.create(assets.image`myImage1`, SpriteKind.tpoint)
-    Turn_Waypoint.setPosition(Math.round((mySprite.x - 8) / 16) * 16 + 8, Math.round((mySprite.y - 8) / 16) * 16 + 8)
-    list[2].follow(Turn_Waypoint, 70)
-}
 function Shoot_Forward () {
     sprites.destroyAllSpritesOfKind(SpriteKind.fcheck)
     if (mySprite.vx != 0) {
@@ -187,14 +176,13 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
         )
         mySprite.setPosition(11 * 16 + 8, 20 * 16 + 8)
         info.changeLifeBy(-1)
+        ResetGhosts()
     })
 })
 let frontcheck: Sprite = null
-let Turn_Waypoint: Sprite = null
 let FrontWaypoint: Sprite = null
 let BackWaypoint: Sprite = null
 let BackCheck: Sprite = null
-let list: Sprite[] = []
 let Ghost4: Sprite = null
 let Ghost3: Sprite = null
 let Ghost2: Sprite = null
@@ -212,9 +200,3 @@ tileUtil.createSpritesOnTiles(assets.tile`myTile7`, assets.image`myImage`, Sprit
 mySprite = sprites.create(assets.image`myImage0`, SpriteKind.Player)
 mySprite.setPosition(11 * 16 + 8, 20 * 16 + 8)
 ResetGhosts()
-game.onUpdateInterval(10000, function () {
-    if (randint(1, 3) == 2) {
-        list.push(list.removeAt(0))
-        list[3].follow(mySprite, 70)
-    }
-})
