@@ -39,6 +39,26 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage6"
     },
+    "image9": {
+        "data": "hwQNAA0AAAAAAAAAAAAAAAAwMzMzMwAAABMRMzMDAAAwEfE/MzMAADAR8T8zMwAAMxMRMzMDAAAzMzMzMwMAADMTETMzAwAAMBHxPzMzAAAwEfE/MzMAAAATETMzAwAAADAzMzMzAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage7"
+    },
+    "image10": {
+        "data": "hwQBAAEAAAAHAAAA",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage8"
+    },
+    "image11": {
+        "data": "hwQDAAMAAAAHBwAAcAAAAAcHAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage9"
+    },
+    "image12": {
+        "data": "hwQNAA0AAAAAAAAAAAAAAABARERERAAAABQRREQEAABAEfFPREQAAEAR8U9ERAAARBQRREQEAABERERERAQAAEQUEUREBAAAQBHxT0REAABAEfFPREQAAAAUEUREBAAAAEBEREREAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage10"
+    },
     "anim3": {
         "namespace": "myAnimations",
         "id": "anim3",
@@ -66,6 +86,13 @@
         "mimeType": "application/mkcd-animation",
         "data": "YzgwMDBkMDAwZDAwMDIwMDAwZjBmZmZmZmYwMDAwZjA1NTU1NTVmNTAwZjA1NTU1NTU1NWY1ZjA1NTU1NTU1NTU1ZjU1ZjU1NTU1NTU1NTVmZjU1NTU1NTU1NTVmNTVmNTU1NTU1NTU1NWZmNTU1NTU1NTU1NWY1NWY1NTU1NTU1NTU1ZmY1NTU1NTU1NTU1ZjVmMDU1NTU1NTU1ZjUwMGYwNTU1NTU1ZjUwMDAwZjBmZmZmZmYwMDAwMDBmMGZmZmZmZjAwMDBmMDU1NTU1NWY1MDBmMDU1NTU1NTU1ZjVmMDU1NTU1NTU1NTVmNTVmNTU1NTU1NTU1NWZmNTU1NWY1NTU1NWY1NWY1NWY1ZjA1NTU1ZmY1NTU1MGY1ZjU1ZjU1ZjU1MGYwMDVmNTVmZjU1ZjUwMGYwNTVmNWYwNTUwZjAwNWZmNTAwZjAwZjAwMDBmZjAwMDBmMDAwMDBmMDAwMDA=",
         "displayName": "myAnim2"
+    },
+    "anim5": {
+        "namespace": "myAnimations",
+        "id": "anim5",
+        "mimeType": "application/mkcd-animation",
+        "data": "YzgwMDBkMDAwZDAwMDEwMDAwZjBmZmZmZmYwMDAwZjA1NTU1NTVmNTAwZjA1NTU1NTU1NWY1ZjA1NTU1NTU1NTU1ZjU1ZjU1NTU1NTU1NTVmZjU1NTU1NTU1NTVmNTVmNTU1NTU1NTU1NWZmNTU1NTU1NTU1NWY1NWY1NTU1NTU1NTU1ZmY1NTU1NTU1NTU1ZjVmMDU1NTU1NTU1ZjUwMGYwNTU1NTU1ZjUwMDAwZjBmZmZmZmYwMDAw",
+        "displayName": "myAnim3"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
