@@ -9,26 +9,6 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage0"
     },
-    "image3": {
-        "data": "hwQQABAAAAAiAAAAAAAAACIAAAAAAAAAIgAAAAAAAAAiAAAAAAAAACIAAAAAAAAAIgAAAAAAAAAiAAAAAAAAACIAAAAAAAAAIgAAAAAAAAAiAAAAAAAAACIAAAAAAAAAIgAAAAAAAAAiAAAAAAAAACIAAAAAAAAAIgAAAAAAAAAiAAAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "myImage1"
-    },
-    "image5": {
-        "data": "hwQQABAAAAAAAAAAAAAAIgAAAAAAAAAiAAAAAAAAACIAAAAAAAAAIgAAAAAAAAAiAAAAAAAAACIAAAAAAAAAIgAAAAAAAAAiAAAAAAAAACIAAAAAAAAAIgAAAAAAAAAiAAAAAAAAACIAAAAAAAAAIgAAAAAAAAAiAAAAAAAAACIAAAAAAAAAIg==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "myImage3"
-    },
-    "image6": {
-        "data": "hwQQABAAAAAiIiIiIiIiIiIiIiIiIiIiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "myImage4"
-    },
-    "image4": {
-        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIiIiIiIiIiIiIiIiIg==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "myImage2"
-    },
     "image7": {
         "data": "hwQBAAEAAAACAAAA",
         "mimeType": "image/x-mkcd-f4",
@@ -58,6 +38,21 @@
         "data": "hwQNAA0AAAAAAAAAAAAAAABARERERAAAABQRREQEAABAEfFPREQAAEAR8U9ERAAARBQRREQEAABERERERAQAAEQUEUREBAAAQBHxT0REAABAEfFPREQAAAAUEUREBAAAAEBEREREAAAAAAAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage10"
+    },
+    "image14": {
+        "data": "hwQNAA0AAAAAAAAAAAAAAAAgIiIiIgAAABIRIiICAAAgEfEvIiIAACAR8S8iIgAAIhIRIiICAAAiIiIiIgIAACISESIiAgAAIBHxLyIiAAAgEfEvIiIAAAASESIiAgAAACAiIiIiAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage12"
+    },
+    "image13": {
+        "data": "hwQNAA0AAAAAAAAAAAAAAACQmZmZmQAAABkRmZkJAACQEfGfmZkAAJAR8Z+ZmQAAmRkRmZkJAACZmZmZmQkAAJkZEZmZCQAAkBHxn5mZAACQEfGfmZkAAAAZEZmZCQAAAJCZmZmZAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage11"
+    },
+    "image3": {
+        "data": "hwQDAAMAAAAFBQAAUAAAAAUFAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage1"
     },
     "anim3": {
         "namespace": "myAnimations",
